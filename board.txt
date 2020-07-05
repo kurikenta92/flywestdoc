@@ -1,1 +1,55 @@
-変数とは
+
+<?php
+if(is_home() || is_front_page()) {
+$title_tag_start = '<h1 class="site-title">';
+$title_tag_end = '</h1>';
+} else {
+$title_tag_start = '<p class="site-title">';
+$title_tag_end = '</p>';
+}
+?>
+
+
+
+
+
+
+
+文字を表示する場合
+
+<?php echo "<h1 class="site-title">"; ?>
+<a href="<?php echo home_url(); ?>">
+<?php bloginfo( 'name' ); ?>
+</a>
+<?php echo "</h1>"; ?>
+
+
+<?php wp_nav_menu( array(
+'theme_location' => 'header-nav',
+'container' => 'nav',
+'container_class' => 'header-nav',
+'container_id' => 'header-nav',
+'fallback_cb' => ''
+) ); ?>
+
+array(肉、筋トレ、FX、仮想通貨、株、ゆゆ、じじ、)
+
+wp_nav_menu()
+
+
+
+
+throw($object) {
+
+　echo "$objectを投げる"
+
+}
+
+throw("野球ボール")　
+→野球ボールを投げる
+
+throw("フリスビー")
+→フリスビーを投げる
+
+
+
